@@ -1,0 +1,32 @@
+.radiobutton__splitter {
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
+.cards__position {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  @include tablet {
+    justify-content: flex-start;
+  }
+}
+
+.cards__item {
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
+}

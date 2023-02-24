@@ -1,0 +1,38 @@
+.soc__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.soc__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color $transition-default;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &--dark {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.soc__icon--light {
+  fill: $primary-white-color;
+}
+
+.soc__icon--dark {
+  fill: $grey-soc-item-color;
+  transition: fill $transition-default;
+
+  .soc__link:hover &,
+  .soc__link:focus & {
+    fill: $primary-white-color;
+  }
+}

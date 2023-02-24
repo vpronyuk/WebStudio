@@ -1,0 +1,11 @@
+.addmenu__btn {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  transition: fill $transition-default;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}

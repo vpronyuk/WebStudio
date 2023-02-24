@@ -1,0 +1,167 @@
+.footer {
+  background-color: $dark-bg-color;
+}
+
+.footer__content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__tablet {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+.footer__contacts {
+  text-align: center;
+
+  @include desktop {
+    text-align: start;
+    margin-right: 70px;
+  }
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @include desktop {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+.address__link {
+  line-height: 1.71;
+  color: $footer-link-color;
+  text-decoration: none;
+  font-style: normal;
+  transition: color $transition-default;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer__map {
+  color: $primary-white-color;
+  transition: color $transition-default;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.address__tel {
+}
+.footer__social {
+  margin-top: 60px;
+  text-align: center;
+
+  @include tablet {
+    margin-top: 0;
+  }
+
+  @include desktop {
+    text-align: start;
+    margin-right: 93px;
+  }
+}
+.social__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+
+.footer__form {
+  margin-top: 60px;
+  text-align: center;
+
+  @include desktop {
+    text-align: start;
+    margin-top: 0;
+  }
+}
+.form__content {
+}
+.form__label {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+.input__btn {
+  margin-top: 20px;
+  @include desktop {
+    display: flex;
+  }
+}
+.form__input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 15px 16px;
+  width: 100%;
+
+  @include tablet {
+    max-width: 450px;
+  }
+
+  @include desktop {
+    width: 358px;
+  }
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: transparent;
+  color: $primary-white-color;
+  transition: outline-color $accent-color;
+
+  &:focus {
+    outline-color: $accent-color;
+  }
+
+  &::placeholder {
+    line-height: 1.25;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.form__btn {
+  margin-top: 20px;
+  padding: 10px 31px;
+  transition: background-color $transition-default;
+
+  &:hover,
+  &:focus {
+    background-color: $interactive-btn-color;
+  }
+
+  @include desktop {
+    margin-left: 12px;
+    margin-top: 0;
+  }
+}
+
+.btn__icon {
+  margin-left: 12px;
+  vertical-align: middle;
+  fill: currentColor;
+}

@@ -1,0 +1,53 @@
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @include desktop {
+    width: 170px;
+  }
+}
+
+.clients__link {
+  max-width: 210px;
+  height: 92px;
+  border: 1px solid $grey-soc-item-color;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: border-color $transition-default;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  @include tablet {
+    max-width: 226px;
+  }
+
+  // @include desktop {
+  //   max-width: 170px;
+  // }
+}
+
+.clients__icon {
+  fill: $grey-soc-item-color;
+
+  transition: fill $transition-default;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-color;
+  }
+}
