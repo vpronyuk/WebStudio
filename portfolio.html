@@ -133,25 +133,58 @@
       <section class="portfolio-page section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="list radiobutton__list radiobutton__splitter">
+          <ul
+            class="list radiobutton__list radiobutton__splitter"
+            id="filter-btns"
+          >
             <li>
-              <button class="radiobutton__item" type="button">Усі</button>
+              <button
+                class="radiobutton__item active filter-btn btn-pushed"
+                data-id="all"
+                type="button"
+              >
+                Усі
+              </button>
             </li>
             <li>
-              <button class="radiobutton__item" type="button">Веб-сайти</button>
+              <button
+                class="radiobutton__item filter-btn"
+                data-id="website"
+                type="button"
+              >
+                Веб-сайти
+              </button>
             </li>
             <li>
-              <button class="radiobutton__item" type="button">Додатки</button>
+              <button
+                class="radiobutton__item filter-btn"
+                data-id="application"
+                type="button"
+              >
+                Додатки
+              </button>
             </li>
             <li>
-              <button class="radiobutton__item" type="button">Дизайн</button>
+              <button
+                class="radiobutton__item filter-btn"
+                data-id="design"
+                type="button"
+              >
+                Дизайн
+              </button>
             </li>
             <li>
-              <button class="radiobutton__item" type="button">Маркетинг</button>
+              <button
+                class="radiobutton__item filter-btn"
+                data-id="marketing"
+                type="button"
+              >
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="list cards__position">
-            <li class="cards__item">
+            <li class="cards__item website">
               <a
                 class="cards__link"
                 href="#"
@@ -199,7 +232,7 @@
                 </div>
               </a>
             </li>
-            <li class="cards__item">
+            <li class="cards__item design">
               <a
                 class="cards__link"
                 href="#"
@@ -247,7 +280,7 @@
                 </div>
               </a>
             </li>
-            <li class="cards__item">
+            <li class="cards__item application">
               <a
                 class="cards__link"
                 href="#"
@@ -295,7 +328,7 @@
                 </div>
               </a>
             </li>
-            <li class="cards__item">
+            <li class="cards__item marketing">
               <a
                 class="cards__link"
                 href="#"
@@ -343,7 +376,7 @@
                 </div>
               </a>
             </li>
-            <li class="cards__item">
+            <li class="cards__item application">
               <a
                 class="cards__link"
                 href="#"
@@ -391,7 +424,7 @@
                 </div>
               </a>
             </li>
-            <li class="cards__item">
+            <li class="cards__item website">
               <a
                 class="cards__link"
                 href="#"
@@ -439,7 +472,7 @@
                 </div>
               </a>
             </li>
-            <li class="cards__item">
+            <li class="cards__item design">
               <a
                 class="cards__link"
                 href="#"
@@ -487,7 +520,7 @@
                 </div>
               </a>
             </li>
-            <li class="cards__item">
+            <li class="cards__item marketing">
               <a
                 class="cards__link"
                 href="#"
@@ -535,7 +568,7 @@
                 </div>
               </a>
             </li>
-            <li class="cards__item">
+            <li class="cards__item application">
               <a
                 class="cards__link"
                 href="#"
@@ -708,5 +741,6 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>

@@ -688,11 +688,6 @@ body {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
-.form__input:-ms-input-placeholder {
-  line-height: 1.25;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
-}
 .form__input::placeholder {
   line-height: 1.25;
   font-size: 16px;
@@ -854,9 +849,6 @@ body {
 .feedback__comment textarea:focus::-moz-placeholder {
   color: #2196f3;
 }
-.feedback__comment textarea:focus:-ms-input-placeholder {
-  color: #2196f3;
-}
 .feedback__comment textarea:focus::placeholder {
   color: #2196f3;
 }
@@ -866,14 +858,6 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.feedback__comment textarea:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feedback__comment textarea::placeholder {
